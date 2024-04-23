@@ -1,5 +1,6 @@
-package dev.micfro.springwebclient.controler;
+package dev.micfro.springwebclient.config;
 
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.MediaType;
@@ -9,7 +10,6 @@ import org.springframework.web.reactive.function.client.WebClient;
 @Configuration
 public class WebClientConfig {
 
-    // Create a WebClient bean that will be used to make requests to the JSONPlaceholder API
     @Bean
     public WebClient webClient() {
 

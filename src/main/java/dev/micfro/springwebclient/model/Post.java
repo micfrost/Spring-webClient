@@ -1,2 +1,16 @@
-package dev.micfro.springwebclient.model;public class Post {
+package dev.micfro.springwebclient.model;
+
+import lombok.Data;
+
+@Data
+public class Post {
+
+    private int userId;
+
+    private int id;
+
+    private String title;
+
+    private String body;
+
 }
